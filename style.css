@@ -1,0 +1,229 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:#002339;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.container{
+    width:90%;
+    max-width:700px;
+}
+
+
+.container h1{
+    font-weight:500;
+    font-size:42px;
+    line-height:1.3;
+}
+
+.container h1 span{
+    color:#019f55;
+    border-bottom:4px solid #019f55;
+    padding-bottom:6px;
+}
+
+
+.display{
+    width:100%;
+    margin:40px 0 20px;
+    background:#fff;
+    color:#333;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.display input{
+    border:0;
+    outline:0;
+    font-size:22px;
+    width:100%;
+}
+
+
+.display img{
+    width:26px;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.display img:hover{
+    transform:scale(1.15);
+}
+
+
+.container button{
+    border:0;
+    outline:0;
+    background:#019f55;
+    color:#002339;
+    font-size:20px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:14px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.2s;
+    margin-top:8px;
+}
+
+.container button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.container button img{
+    width:24px;
+}
+
+@media (max-width: 768px){
+
+    .container{
+        width:92%;
+    }
+
+    .container h1{
+        font-size:34px;
+    }
+
+    .display{
+        padding:18px;
+    }
+
+    .display input{
+        font-size:18px;
+    }
+
+    .container button{
+        font-size:18px;
+        padding:12px 18px;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 480px){
+
+    body{
+        padding:20px;
+        align-items:flex-start;
+    }
+
+    .container{
+        margin-top:40px;
+    }
+
+    .container h1{
+        font-size:28px;
+    }
+
+    .display{
+        flex-direction:row;
+        gap:10px;
+        padding:16px;
+    }
+
+    .display input{
+        font-size:16px;
+        min-width: 0;
+    }
+
+    .display img{
+        width:22px;
+        padding: 6px;
+    }
+
+    .container button{
+        width:100%;
+        justify-content:center;
+        font-size:16px;
+
+    
+    }
+    .length-control{
+        margin:22px 0 26px;
+    }
+}
+
+/* Prevent input overflow inside flex */
+.display input{
+    flex:1;
+    min-width:0;
+}
+
+/* Better small phone spacing */
+@media (max-width:380px){
+
+    .container h1{
+        font-size:24px;
+    }
+
+    .display{
+        padding:14px;
+    }
+
+    .container button{
+        font-size:15px;
+        padding:12px;
+    }
+}
+
+/* Landscape phones */
+@media (max-height:600px){
+    body{
+        align-items:flex-start;
+        padding-top:30px;
+    }
+}
+
+/* Smooth text scaling */
+html{
+    -webkit-text-size-adjust:100%;
+}
+.container{
+    animation:fade .5s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.container button:focus,
+.display input:focus{
+    outline:2px solid #019f55;
+    outline-offset:2px;
+}
+
+.length-control{
+    margin:20px 0 25px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding-bottom:5px;
+}
+.length-control input{
+    width:100%;
+    cursor:pointer;
+}
