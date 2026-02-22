@@ -29,6 +29,9 @@ Continuing my 30 Days JavaScript Challenge, I built a modern Password Generator 
 • Toast notifications
 • Save password history
 
+## live 
+https://saurabh54e.github.io/Js-day05-Random-Password-Generator/
+
 ## Author 
 Saurabh Singh.
 B.Tech CSE (AI & ML) — Web Development | UI/UX | Robotics
