@@ -30,7 +30,8 @@ Continuing my 30 Days JavaScript Challenge, I built a modern Password Generator 
 • Save password history
 
 ## live 
-https://saurabh54e.github.io/js-day05-Random-Password-Generator/
+
+
 
 ## Author 
 Saurabh Singh.
